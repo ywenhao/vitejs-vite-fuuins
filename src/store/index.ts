@@ -1,8 +1,8 @@
 import React from 'react';
-import counter from './counter';
+import counterStore from './counter';
 
 const store = React.createContext({
-  counter,
+  counterStore,
 });
 
 export const useStore = () => React.useContext(store);

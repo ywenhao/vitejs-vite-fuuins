@@ -4,8 +4,8 @@ import { useStore } from './store';
 import { observer } from 'mobx-react-lite';
 
 function App() {
-  const { counter } = useStore();
-  const { count, add } = counter;
+  const { counterStore } = useStore();
+  const { count, add } = counterStore;
 
   return (
     <div className="App">
