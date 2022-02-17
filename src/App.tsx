@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { useStore } from './store';
+import { useStore } from '@/store';
 import { observer } from 'mobx-react-lite';
 
 function App() {
   const { counterStore } = useStore();
   const { count, add } = counterStore;
-
   return (
     <div className="App">
       <header className="App-header">
